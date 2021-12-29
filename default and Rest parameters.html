@@ -13,13 +13,17 @@
         //alert(`Rest formal parameresrs ${args}`)
         var result = 0;
         args.forEach(function(args) {result +=args;})
-        alert(result)
         return result
     }
     
     let [x,y,z] = [1,2,3];
     let addResult =add(x,y,z) 
     alert(`Add Result ${addResult}`)
+    
+    let args = [1,2,3]
+    let addRes = add(...args);
+    //Spread operator - used to spread an array into parameter
+    alert(`Add Res ${addRes}`)   
  
 </script>
 
