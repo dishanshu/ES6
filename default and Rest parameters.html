@@ -1,0 +1,25 @@
+<script>
+    
+    //Deafault Parameter
+    function sum(x =20, y = 30){
+        return(x+y);
+    }
+    alert(sum())
+    //50
+    
+    
+    //Rest Parameter
+    function add(...args){
+        //alert(`Rest formal parameresrs ${args}`)
+        var result = 0;
+        args.forEach(function(args) {result +=args;})
+        alert(result)
+        return result
+    }
+    
+    let [x,y,z] = [1,2,3];
+    let addResult =add(x,y,z) 
+    alert(`Add Result ${addResult}`)
+ 
+</script>
+
