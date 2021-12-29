@@ -1,0 +1,22 @@
+<script>
+
+    var details = {
+        name: "Sam",
+        id: 23,
+        city: "Indore",
+        phone: 9876354
+    }
+    
+    //alert(details.name)
+    var {name,...details} = {
+        name: "Sam",
+        id: 23,
+        city: "Indore",
+        phone: 9876354
+    }
+    
+    alert(name,details)
+    //console.log(name,details)
+    //output: Sam {id: 23, city: "Indore", phone: 9876354}
+    
+</script>
