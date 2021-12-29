@@ -20,10 +20,21 @@
     let addResult =add(x,y,z) 
     alert(`Add Result ${addResult}`)
     
+    //Spread operator
     let args = [1,2,3]
     let addRes = add(...args);
     //Spread operator - used to spread an array into parameter
-    alert(`Add Res ${addRes}`)   
+    alert(`Add Res ${addRes}`)
+    
+    var num1 = [3,4,5]
+    var num2 = [1,2,...num1,6,7,8,9]
+    alert(num2)
+    
+    //Math function 
+    alert(Math.max(...num2))
+    
+    let {x1, y2, ...z3} = {x: 1, y: 2, z: 3, a: 4, b:5,c:6 };
+    alert(x1,y2,z3)
  
 </script>
 
